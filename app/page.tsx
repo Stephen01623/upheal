@@ -15,7 +15,7 @@ import Gallery from "@/app/components/landing/Gallery";
 export default function Home() {
   return (
     <>
-      <Header />
+
       <main>
         <Hero />
         <Features />
@@ -30,7 +30,7 @@ export default function Home() {
         <Contact />
       </main>
 
-      <Footer />
+
     </>
   );
 }

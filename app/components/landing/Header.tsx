@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Header() {
   return (
     <header className="w-full bg-[#2f2f2f] text-white">
@@ -25,6 +27,9 @@ export default function Header() {
           <a className="hover:text-[#fcb900]">Atlas of Histology</a>
           <a className="hover:text-[#fcb900]">Practice</a>
           <a className="hover:text-[#fcb900]">FAQs</a>
+            <Link href="/lectures" className="hover:text-[#fcb900]">
+    Essential Lectures
+  </Link>
           <a className="hover:text-[#fcb900]">Contact Us</a>
         </nav>
       </div>
