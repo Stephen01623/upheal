@@ -117,6 +117,21 @@ export const lectures = [
         desc: "A lecture on the Bony Pelvis by Dr. Florida F. Taladtad, MD",
         youtubeId: "4Uyf26yRyfk",
       },
+       {
+        title: "Breast",
+        desc: "A lecture on the Breast by Dr. Florida F. Taladtad, MD",
+        youtubeId: "lRl1Kf4qYfk",
+      },
+       {
+        title: "Female External Genitalia",
+        desc: "A lecture on the Female External Genitalia by Dr. Florida F. Taladtad, MD",
+        youtubeId: "0Nq3fO-Qz-c",
+      },
+       {
+        title: "Pelvic Floor and Pelvic Wall",
+        desc: "A lecture on the FPelvic Floor and Pelvic Wall by Dr. Florida F. Taladtad, MD",
+        youtubeId: "A26I-l4LHlk",
+      },
      
     ],
   },
