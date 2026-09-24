@@ -77,6 +77,47 @@ export const lectures = [
         desc: "A lecture on the Facial Anatomy by Dr. Rowena F. Genuino, MD, MSc, PhD",
         youtubeId: "dwdcI6vIL7E",
       },
+      {
+        title: "Skin",
+        desc: "A lecture on the Skin by Dr. Rowena F. Genuino, MD, MSc, PhD",
+        youtubeId: "gEgRY_b4k-4",
+      },
+    ],
+  },
+  {
+    lecturer: "Dr. BLESILE SUZETTE S. MANTARING , MD",
+    videos: [
+      {
+        title: "Fallopian Tubes",
+        desc: "A lecture on the Fallopian Tubes by Dr. Blesile Suzette S. Mantaring, MD",
+        youtubeId: "FoDxN-2CEzI",
+      },
+      {
+        title: "Ovaries",
+       desc: "A lecture on the Ovaries by Dr. Blesile Suzette S. Mantaring, MD",
+        youtubeId: "uxq37mXetYY",
+      },
+      {
+        title: "Perineum",
+       desc: "A lecture on the Perineum by Dr. Blesile Suzette S. Mantaring, MD",
+        youtubeId: "KIQ8A_yGrSY",
+      },
+      {
+        title: "Vagina",
+       desc: "A lecture on the Vagina by Dr. Blesile Suzette S. Mantaring, MD",
+        youtubeId: "wOx71MJDsE8",
+      },
+    ],
+  },
+   {
+    lecturer: "Dr. FLORIDA F. TALADTAD, MD",
+    videos: [
+      {
+        title: "Bony Pelvis",
+        desc: "A lecture on the Bony Pelvis by Dr. Florida F. Taladtad, MD",
+        youtubeId: "4Uyf26yRyfk",
+      },
+     
     ],
   },
 ];

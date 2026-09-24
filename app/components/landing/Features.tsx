@@ -1,62 +1,70 @@
-export default function Features() {
-  const items = [
+"use client";
+
+import Link from "next/link";
+
+export default function FeatureSection() {
+  const features = [
     {
       title: "Atlas of Anatomy",
-      img: "/anatomy.jpg",
-      bg: "#fcb900",
+      image: "/heart.jpg",
+      color: "bg-[#d4a017]",
+      link: "/anatomy",
     },
     {
       title: "360 Anatomy",
-      img: "/360.jpg",
-      bg: "#1f3d36",
+      image: "/360.jpg",
+      color: "bg-[#1f3d36]",
+      link: "/anatomy-360",
     },
     {
       title: "Essential Lectures",
-      img: "/lectures.jpg",
-      bg: "#7a1c1c",
+      image: "/lecture.jpg",
+      color: "bg-[#7a1c1c]",
+      link: "/lectures",
     },
     {
       title: "Atlas of Histology",
-      img: "/histology.jpg",
-      bg: "#fcb900",
-    },
-    {
-      title: "Anatomy Research",
-      img: "/research.jpg",
-      bg: "#1f3d36",
-    },
-    {
-      title: "FAQs",
-      img: "/faq.jpg",
-      bg: "#7a1c1c",
+      image: "/histology.jpg",
+      color: "bg-[#d4a017]",
+      link: "/histology",
     },
   ];
 
   return (
-    <section className="bg-[#eeeeee] py-12">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 px-4">
+    <section className="bg-[#f5f5f5] py-16 px-6">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-6">
 
-        {items.map((item, i) => (
-          <div
-            key={i}
-            className="flex bg-white rounded-xl shadow-md overflow-hidden h-[150px]"
-          >
-            {/* IMAGE */}
-            <div className="w-1/2">
-              <img
-                src={item.img}
-                className="w-full h-full object-cover"
-              />
+        {features.map((item, i) => (
+          <Link href={item.link} key={i}>
+
+            <div className="group relative h-[200px] rounded-xl overflow-hidden cursor-pointer shadow-md transition duration-300 hover:shadow-xl">
+
+              {/* IMAGE (LEFT SIDE) */}
+              <div className="absolute inset-0 w-[70%] overflow-hidden">
+                <img
+                  src={item.image}
+                  className="h-full w-full object-cover transition duration-500 ease-out group-hover:scale-125 group-hover:-translate-x-4"
+                />
+              </div>
+
+              {/* RIGHT COLOR PANEL */}
+              <div
+                className={`absolute right-0 top-0 h-full w-[50%] ${item.color} transition-all duration-500 group-hover:w-full`}
+              ></div>
+
+              {/* DARK OVERLAY (optional for readability) */}
+              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition duration-300"></div>
+
+              {/* TEXT CENTER */}
+              <div className="absolute inset-0 flex items-center justify-center z-10">
+                <h3 className="text-white text-xl md:text-2xl font-semibold tracking-wide">
+                  {item.title}
+                </h3>
+              </div>
+
             </div>
 
-            {/* TEXT */}
-            <div
-              className="w-1/2 flex items-center justify-center text-white text-lg font-semibold"
-              style={{ backgroundColor: item.bg }}
-            >
-              {item.title}
-            </div>
-          </div>
+          </Link>
         ))}
 
       </div>

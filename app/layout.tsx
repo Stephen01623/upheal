@@ -11,13 +11,12 @@ export default function RootLayout({
     <html lang="en">
       <body>
 
-        {/* 🔝 NAVBAR (GLOBAL) */}
         <Header />
 
-        {/* 🔄 PAGE CONTENT */}
+  
         <main>{children}</main>
 
-        {/* 🔻 FOOTER (GLOBAL) */}
+
         <Footer />
 
       </body>
