@@ -8,7 +8,7 @@ export default function LecturesPage() {
 
   return (
     <section className="bg-[#f5f5f5] min-h-screen py-16 px-6">
-      <div className="max-w-6xl mx-auto">
+      <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="mb-12">
           <p className="text-sm tracking-widest text-gray-500 mb-2 uppercase">
